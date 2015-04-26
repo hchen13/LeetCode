@@ -19,5 +19,4 @@ class Solution:
 		return self.read(self.countAndSay(n - 1))
 
 s = Solution()
-
 print s.countAndSay(5)
