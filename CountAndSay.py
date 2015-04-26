@@ -20,4 +20,5 @@ class Solution:
 
 s = Solution()
 # print Solution().countAndSay(3)
+# lorem ipsum
 print s.countAndSay(5)
