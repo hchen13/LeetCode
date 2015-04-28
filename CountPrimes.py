@@ -5,14 +5,14 @@ class Solution:
     # @param {integer} n
     # @return {integer}
     def countPrimes(self, n):
-        if n == 0:
+        if n == 0 or n == 1:
             return 0
-        isPrime = [True] * (n + 1)
+        isPrime = [True for i in range(n)]
         isPrime[1] = False
         a = int(sqrt(n))
         for i in range(2, a + 1):
             if isPrime[i] != False:
-                for j in range(i + i, n + 1, i):
+                for j in range(i + i, n, i):
                     isPrime[j] = False
                     
         primes = 0
@@ -25,4 +25,4 @@ class Solution:
 
 
 s = Solution()
-print s.countPrimes(1000000)
+print s.countPrimes(1)
