@@ -11,15 +11,15 @@ class Solution:
         isPrime[1] = False
         a = int(sqrt(n))
         for i in range(2, a + 1):
-            if isPrime[i] != False:
+            if isPrime[i] is not False:
                 for j in range(i + i, n, i):
                     isPrime[j] = False
-                    
+
         primes = 0
         for i, val in enumerate(isPrime):
             if i == 0:
                 continue
-            if val != False:
+            if val is not False:
                 primes += 1
         return primes
 

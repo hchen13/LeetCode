@@ -5,7 +5,7 @@ class Solution(object):
 
 
 if __name__ == '__main__':
-	a = 2; b = 4
+	a = 1; b = 4
 	s = Solution()
 	c = s.hammingDistance(a, b)
 	print c, type(c)
